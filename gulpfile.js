@@ -21,7 +21,7 @@ const html = () => {
         removeComments: true,
       }),
     )
-    .pipe(gulp.dest('dest'))
+    .pipe(gulp.dest('build'))
     .pipe(sync.stream())
 };
 exports.html = html;
@@ -33,7 +33,7 @@ const server = () => {
     ui: false,
     notify: false,
     server: {
-      baseDir: 'dest'
+      baseDir: 'build'
     }
   });
 };
@@ -53,7 +53,7 @@ const styles = () => {
       ]),
     )
     .pipe(rename('index.min.css'))
-    .pipe(gulp.dest('dest/styles'))
+    .pipe(gulp.dest('build/styles'))
     .pipe(sync.stream())
 };
 exports.styles = styles;
@@ -79,7 +79,7 @@ const jsConcat = () => {
     .pipe(concat('index.js'))
     .pipe(terser())
     .pipe(rename('index.min.js'))
-    .pipe(gulp.dest('dest/scripts'))
+    .pipe(gulp.dest('build/scripts'))
     .pipe(sync.stream())
 };
 exports.jsConcat = jsConcat;
@@ -91,7 +91,7 @@ exports.scripts = scripts;
 
 const images = () => {
   return gulp.src('./src/images/*.*')
-  .pipe(gulp.dest('dest/images'))
+  .pipe(gulp.dest('build/images'))
 }
 exports.images = images;
 
@@ -106,14 +106,14 @@ const watch = () => {
 }
 
 const clear = () => {
-  return del('dest');
+  return del('build');
 }
 exports.clear = clear;
 
 const copy = () => {
   return gulp.src('./src/fonts/**/*.{woff,woff2}')
-    .pipe(newer('dest/fonts'))
-    .pipe(gulp.dest('dest/fonts'))
+    .pipe(newer('build/fonts'))
+    .pipe(gulp.dest('build/fonts'))
 }
 exports.copy = copy;
 

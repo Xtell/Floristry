@@ -1,0 +1,40 @@
+.btn {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding: 16px 30px;
+  border: none;
+  background-color: transparent;
+  font-size: 10px;
+  line-height: 11px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.btn--opacity {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.btn--black {
+  background-color: #000000;
+  border: 1px solid transparent;
+}
+.btn:hover,
+.btn--opacity:hover,
+.btn--black:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+@media (width >= 768px) {
+  .btn {
+    padding: 22px 40px;
+  }
+}
+
+@media (width >= 1110px) {
+  .btn {
+    padding: 20px 30px;
+  }
+}

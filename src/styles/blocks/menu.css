@@ -1,0 +1,130 @@
+.menu__button {
+  position: absolute;
+  top: 26px;
+  right: 30px;
+  display: block;
+  width: 38px;
+  height: 27px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  background-image: url('../images/menu.svg');
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__button--open {
+  background-image: url('../images/cross.svg');
+}
+.menu__icon {
+  stroke: #ffffff;
+}
+.menu__button-text {
+  display: none;
+}
+
+.menu__list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  padding-top: 130px;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-bottom: 0;
+  list-style: none;
+  background-color: #3b181e;
+  text-align: center;
+}
+.menu__item {
+  margin-bottom: 50px;
+}
+.menu__link {
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+.menu__link:hover {
+  font-size: 25px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.menu__list--open {
+  display: flex;
+}
+@media (width >= 768px) {
+  .menu__button {
+    top: 38px;
+    right: 50px;
+    background-position: 50% 0;
+  }
+  .menu__list {
+    padding-top: 307px;
+  }
+  .menu__item {
+    margin-bottom: 66px;
+  }
+
+  .menu__link {
+    font-size: 30px;
+    line-height: 33px;
+    letter-spacing: 0.09em;
+  }
+  .menu__link:hover {
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
+@media (width > 1110px) {
+  .menu__button {
+    top: 106px;
+    right: 90px;
+    width: auto;
+    height: auto;
+    padding-left: 38px;
+    background-image: url('../images/menu-desktop.svg');
+    background-position: 0 55%;
+  }
+  .menu__button--open {
+    top: 100px;
+    height: 28px;
+    background-image: url('../images/cross-desktop.svg');
+  }
+  .menu__button--open .menu__button-text {
+    display: none;
+  }
+  .menu__button-text {
+    display: inline;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  .menu__list {
+    padding-top: 344px;
+  }
+  .menu__item {
+    margin-bottom: 80px;
+  }
+  .menu__link {
+    font-size: 35px;
+    line-height: 39px;
+  }
+  .menu__link:hover {
+    font-size: 45px;
+    line-height: 50px;
+  }
+}

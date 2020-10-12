@@ -1,0 +1,4 @@
+.page__body {
+  display: flex;
+  flex-direction: column;
+}
