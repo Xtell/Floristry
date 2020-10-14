@@ -13,15 +13,20 @@
   justify-content: center;
   padding-top: 28px;
 }
-
 .header__logo {
   width: 96px;
   z-index: 1;
 }
+
+.header__menu-button {
+  position: absolute;
+  top: 26px;
+  right: 30px;
+}
 @media (width >= 768px) {
   .header {
     padding: 38px 50px 38px 50px;
-    background-color: rgba(255, 0, 0, 0.6);
+    background-color: transparent;
   }
   .header--open {
     padding-top: 112px;
@@ -29,14 +34,20 @@
   .header__logo {
     width: 138px;
   }
-
+  .header__menu-button {
+    top: 38px;
+    right: 50px;
+  }
 }
-@media (width > 1110px) {
+@media (width >= 1110px) {
   .header {
-    padding: 87px 90px 87px 96px;
-    background-color: rgba(255, 0, 0, 0.6);
+    padding: 40px 90px 87px 96px;
   }
   .header--open {
     padding-top: 96px;
+  }
+  .header__menu-button {
+    top: 64px;
+    right: 90px;
   }
 }

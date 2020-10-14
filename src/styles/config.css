@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  min-width: 320px;
-  font-family: 'Forum', cursive;
-}
-
 img {
   max-width: 100%;
   height: auto;

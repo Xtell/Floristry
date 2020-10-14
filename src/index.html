@@ -20,7 +20,7 @@
       </a>
     </div>
     <nav class="header__menu menu">
-      <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__list">
+      <button class="header__menu-button menu__button" type="button" aria-expanded="false" aria-controls="menu__list">
         <span class="menu__button-text">Меню</span>
       </button>
       <ul class="menu__list" id="menu__list">
@@ -37,9 +37,36 @@
   </header>
   <main class="page__main">
     <section class="intro">
-      <div class="intro__inner">
-        <b class="intro__tagline">Флористика <br> с душой</b>
-        <a href="" class="intro__link">смотреть работы</a>
+      <!-- <div class="intro__wrapper"> -->
+        <div class="intro__inner">
+          <div class="intro__center">
+            <b class="intro__tagline">Флористика <br> с душой</b>
+            <a href="" class="intro__link btn btn--opacity">смотреть работы</a>
+          </div>
+          <div class="intro__bottom">
+            <ul class="intro__social-list social social--intro">
+              <li class="social__item"><a href="" aria-label="Инстаграм"
+                  class="social__link social__link--intro social__link--inst">
+                </a></li>
+              <li class="social__item"><a href="" class="social__link social__link--intro social__link--fb"
+                  aria-label="Фейсбук">
+                </a></li>
+              <li class="social__item"><a href="" class="social__link social__link--intro social__link--whatsapp"
+                  aria-label="Вацап">
+                </a></li>
+              <li class="social__item"><a href="" class="social__link social__link--intro social__link--vk"
+                  aria-label="Вконтакте">
+                </a></li>
+            </ul>
+            <a href="" class="intro__next-link">
+              <svg width="14" height="14">
+                <use xlink:href="images/sprite.svg#arrow"></use>
+              </svg>
+            </a>
+          </div>
+<!-- 
+        </div> -->
+
       </div>
 
     </section>

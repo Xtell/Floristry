@@ -1,7 +1,4 @@
 .menu__button {
-  position: absolute;
-  top: 26px;
-  right: 30px;
   display: block;
   width: 38px;
   height: 27px;
@@ -66,8 +63,6 @@
 }
 @media (width >= 768px) {
   .menu__button {
-    top: 38px;
-    right: 50px;
     background-position: 50% 0;
   }
   .menu__list {
@@ -89,8 +84,6 @@
 }
 @media (width > 1110px) {
   .menu__button {
-    top: 106px;
-    right: 90px;
     width: auto;
     height: auto;
     padding-left: 38px;

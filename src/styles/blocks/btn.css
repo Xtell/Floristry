@@ -2,7 +2,7 @@
   display: block;
   margin: 0;
   padding: 0;
-  padding: 16px 30px;
+  padding: 16px 34px;
   border: none;
   background-color: transparent;
   font-size: 10px;
@@ -29,12 +29,16 @@
 }
 @media (width >= 768px) {
   .btn {
-    padding: 22px 40px;
+    padding: 22px 46px;
+    font-size: 15px;
+    line-height: 17px;
   }
 }
 
 @media (width >= 1110px) {
   .btn {
-    padding: 20px 30px;
+    padding: 20px 36px;
+    font-size: 12px;
+    line-height: 13px;
   }
 }
